@@ -32,7 +32,7 @@ data "aws_iam_policy_document" "policy_dynamodb" {
 }
 
 resource "aws_iam_policy" "policy_dynamodb" {
-  name = "${local.name_prefix}-policy-dynamodb"
+  name   = "${local.name_prefix}-policy-dynamodb"
   policy = data.aws_iam_policy_document.policy_dynamodb.json
 }
 

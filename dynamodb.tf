@@ -15,7 +15,7 @@ resource "aws_dynamodb_table" "bookinventory" {
   }
 
   tags = {
-    Name        = "harris-bookinventory"
+    Name = "harris-bookinventory"
   }
 }
 
